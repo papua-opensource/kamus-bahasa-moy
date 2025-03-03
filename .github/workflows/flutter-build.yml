@@ -1,4 +1,4 @@
-name: Build Flutter App and Upload to GitHub Releases
+name: Build Kamus Bahasa Moy App and Upload to GitHub Releases
 
 on:
   push:
@@ -24,9 +24,13 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
 
+      - name: Rename APK file to match app name and version
+        run: mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/kamus-bahasa-moy-${GITHUB_REF##*/}.apk
+        shell: bash
+
       - name: Upload APK to GitHub Releases
         uses: softprops/action-gh-release@v1
         with:
-          files: build/app/outputs/flutter-apk/app-release.apk
+          files: build/app/outputs/flutter-apk/kamus-bahasa-moy-${GITHUB_REF##*/}.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
