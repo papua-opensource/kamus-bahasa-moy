@@ -44,13 +44,7 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
 
 ## 🤝 Kontribusi
 
-Kontribusi untuk pengembangan Kamus Bahasa Moy sangat diapresiasi. Jika Anda ingin berkontribusi:
-
-1. Fork repositori
-2. Buat branch fitur baru (`git checkout -b feature/fitur-luar-biasa`)
-3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur luar biasa'`)
-4. Push ke branch (`git push origin feature/fitur-luar-biasa`)
-5. Buka Pull Request
+Kontribusi untuk pengembangan Kamus Bahasa Moy sangat diapresiasi. Jika Anda ingin berkontribusi, Silahkan baca panduannya [disini](CONTRIBUTING.md)
 
 ## 📄 Lisensi
 
