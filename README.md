@@ -24,40 +24,6 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
 ## 🛠️ Teknologi yang Digunakan
 
 - **Framework**: Flutter (Dart)
-- **Penyimpanan Lokal**: Shared Preferences
-- **Manajemen State**: setState (untuk aplikasi dengan kompleksitas rendah)
-- **Standar Kode**: Mengikuti standar Flutter dan Dart untuk memastikan kode yang bersih dan terorganisir
-
-## 🚀 Cara Menginstal dan Menjalankan
-
-### Prasyarat
-
-- Flutter SDK (versi 2.17.0 atau lebih tinggi)
-- Dart SDK (versi 2.17.0 atau lebih tinggi)
-- Android Studio / VS Code dengan plugin Flutter
-- Git
-
-### Langkah-langkah Instalasi
-
-1. Clone repositori ini
-   ```bash
-   git clone https://github.com/papuaopensource/kamus-bahasa-moy.git
-   ```
-
-2. Masuk ke direktori proyek
-   ```bash
-   cd kamus-bahasa-moy
-   ```
-
-3. Dapatkan dependensi
-   ```bash
-   flutter pub get
-   ```
-
-4. Jalankan aplikasi
-   ```bash
-   flutter run
-   ```
 
 ## 📱 Screenshot
 
