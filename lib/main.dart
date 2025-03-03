@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart';
+import 'screens/splash_screen.dart';
+import 'theme/theme_config.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Kamus Bahasa Moy',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'Roboto',
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeConfig.themeData, // Gunakan tema dari konfigurasi tema
       home: const SplashScreen(),
     );
   }
