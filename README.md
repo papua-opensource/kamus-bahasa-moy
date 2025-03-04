@@ -1,4 +1,4 @@
-# Kamus Bahasa Moy
+<h1 align="center">Kamus Bahasa Moy</h1>
 
 <div align="center">
   <img src="assets/images/logo-kamus-bahasa-moy.png" alt="Logo Kamus Bahasa Moy" width="200"/>
