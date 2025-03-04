@@ -153,7 +153,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: isSelected
-                                ? const Color(0xFFadb5bd)
+                                ? const Color(0xFF495057)
                                 : Colors.grey[200],
                           ),
                           child: Center(
