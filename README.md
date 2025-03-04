@@ -16,7 +16,7 @@
 
 ## 📝 Deskripsi
 
-Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melestarikan dan mempromosikan bahasa Moy dari Papua. Aplikasi ini menyediakan kosakata bahasa Moy beserta terjemahan, pengucapan, dan contoh penggunaan dalam kalimat. Dengan antarmuka yang intuitif dan fitur-fitur yang berguna, aplikasi ini memudahkan pengguna untuk mempelajari dan mengapresiasi bahasa Moy.
+Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melestarikan dan mempromosikan bahasa Moy dari Jayapura, Papua. Aplikasi ini menyediakan kosakata bahasa Moy beserta terjemahan, pengucapan, dan contoh penggunaan dalam kalimat. Dengan antarmuka yang intuitif dan fitur-fitur yang berguna, aplikasi ini memudahkan pengguna untuk mempelajari dan mengapresiasi bahasa Moy.
 
 **Data bahasa dalam aplikasi ini diambil dari Kamus Dwibahasa Mooi yang dibuat oleh Balai Bahasa Provinsi Papua**, sehingga menjamin keakuratan dan keaslian konten bahasa yang disajikan.
 
