@@ -152,7 +152,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: isSelected
-                                ? const Color(0xFF164B8F)
+                                ? const Color(0xFF495057)
                                 : Colors.grey[200],
                           ),
                           child: Center(
@@ -179,7 +179,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                   icon: const Icon(
                     Icons.arrow_forward_ios,
                     size: 18,
-                    color: Color(0xFF293241),
+                    color: Color(0xFF495057),
                   ),
                   onPressed: _scrollRight,
                 ),
@@ -235,7 +235,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                             width: double.infinity,
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
-                              color: const Color(0xFF164B8F),
+                              color: const Color(0xFFE9ECEF),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
@@ -249,7 +249,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                                       Text(
                                         word.word,
                                         style: const TextStyle(
-                                          color: Colors.white,
+                                          color: Color(0xFF293241),
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -259,7 +259,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                                       RichText(
                                         text: TextSpan(
                                           style: const TextStyle(
-                                            color: Colors.white,
+                                            color: Color(0xFF293241),
                                             fontSize: 16,
                                           ),
                                           children: [
@@ -285,7 +285,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                                     word.isFavorite
                                         ? Icons.bookmark
                                         : Icons.bookmark_border,
-                                    color: Colors.white,
+                                    color: Color(0xFF293241),
                                   ),
                                   onPressed: () {
                                     setState(() {

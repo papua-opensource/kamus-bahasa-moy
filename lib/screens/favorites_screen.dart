@@ -187,7 +187,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                             width: double.infinity,
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
-                              color: const Color(0xFF164B8F),
+                              color: const Color(0xFFE9ECEF),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
@@ -201,7 +201,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                       Text(
                                         word.word,
                                         style: const TextStyle(
-                                          color: Colors.white,
+                                          color: Color(0xFF293241),
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -211,7 +211,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                       RichText(
                                         text: TextSpan(
                                           style: const TextStyle(
-                                            color: Colors.white,
+                                            color: Color(0xFF293241),
                                             fontSize: 16,
                                           ),
                                           children: [
@@ -235,7 +235,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                                 IconButton(
                                   icon: const Icon(
                                     Icons.bookmark,
-                                    color: Colors.white,
+                                    color: Color(0xFF495057),
                                   ),
                                   onPressed: () {
                                     setState(() {

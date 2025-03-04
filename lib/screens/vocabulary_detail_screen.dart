@@ -47,7 +47,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF164B8F),
+                  color: const Color(0xFFE9ECEF),
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.grey.shade300, width: 1),
                 ),
@@ -61,7 +61,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                           Text(
                             widget.word.word,
                             style: const TextStyle(
-                              color: Colors.white,
+                              color: Color(0xFF293241),
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
                             ),
@@ -71,7 +71,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                           RichText(
                             text: TextSpan(
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Color(0xFF293241),
                                 fontSize: 16,
                               ),
                               children: [
@@ -94,7 +94,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                     IconButton(
                       icon: Icon(
                         _isFavorite ? Icons.bookmark : Icons.bookmark_border,
-                        color: Colors.white,
+                        color: Color(0xFF495057),
                       ),
                       onPressed: () {
                         setState(() {
@@ -146,14 +146,14 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                           height: 24,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Color(0xFF164B8F),
+                            color: Color(0xFFE9ECEF),
                           ),
                           child: const Center(
                             child: Text(
                               '1',
                               style: TextStyle(
-                                backgroundColor: Color(0xFF164B8F),
-                                color: Colors.white,
+                                backgroundColor: Color(0xFFE9ECEF),
+                                color: Color(0xFF293241),
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
