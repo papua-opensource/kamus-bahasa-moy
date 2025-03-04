@@ -32,14 +32,19 @@ Untuk menambah atau memperbaiki konten kamus:
 - Format kode sebelum commit (`flutter format .`)
 - Pastikan tidak ada error atau warning
 
+## Pesan Commit
+
+Sebelum membuat commit, pastikan pesan commit Anda mengikuti format Conventional Commit. Berikut adalah format dasar yang perlu diikuti:
+
+- `feat`: Menambahkan fitur baru (misalnya feat: menambahkan fungsi pencarian dalam kamus)
+- `fix`: Memperbaiki bug atau masalah (misalnya fix: memperbaiki bug tampilan hasil pencarian)
+- `docs`: Memperbarui dokumentasi (misalnya docs: memperbarui panduan kontribusi)
+- `style`: Mengubah format kode (misalnya style: memperbaiki format kode agar lebih rapi)
+- `refactor`: Perubahan kode yang tidak mempengaruhi fitur atau bug (misalnya refactor: merestrukturisasi logika pencarian)
+
 ## Pull Request
 - Jelaskan perubahan yang Anda buat
 - Sertakan referensi ke issue terkait (jika ada)
-- Pastikan semua test lulus
 
 ## Kontak
-Jika Anda memiliki pertanyaan, buat issue atau email kami di papuaopensource@example.com.
-
----
-
-Terima kasih atas kontribusi Anda untuk melestarikan bahasa Moy!
+Jika Anda memiliki pertanyaan, buat issue atau email kami di contact@papuaopensource.org.
