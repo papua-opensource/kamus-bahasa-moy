@@ -72,6 +72,14 @@ Aplikasi ini menggunakan data kosakata dan definisi dari **Kamus Dwibahasa Mooi*
 
 Penggunaan data dari sumber resmi ini memastikan bahwa pengguna mendapatkan informasi bahasa yang akurat dan otentik, sejalan dengan upaya pelestarian bahasa daerah di Papua.
 
+## 🔄 Adaptasi untuk Bahasa Daerah Lain
+
+Kode sumber Kamus Bahasa Moy dapat Anda gunakan untuk membuat aplikasi kamus untuk bahasa daerah lainnya di Indonesia atau di seluruh dunia. Kami mendorong upaya pelestarian bahasa daerah melalui teknologi dan dengan senang hati menyediakan codebase ini sebagai dasar pengembangan aplikasi serupa.
+
+Dalam mengadaptasi kode sumber ini, Anda wajib:
+- Tetap mencantumkan atribusi kepada Papua Open Source sebagai pengembang awal
+- Mematuhi ketentuan lisensi AGPL-3.0, termasuk menjaga kode sumber tetap terbuka untuk umum
+
 ## 📬 Kontak
 
 Untuk pertanyaan atau masukan, silakan hubungi kami di:
