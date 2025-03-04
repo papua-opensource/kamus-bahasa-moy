@@ -38,7 +38,7 @@ class AboutScreen extends StatelessWidget {
               'Versi Aplikasi',
               style: TextStyle(
                 fontSize: 18,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 8),
@@ -51,7 +51,7 @@ class AboutScreen extends StatelessWidget {
               'Tentang Bahasa Moy',
               style: TextStyle(
                 fontSize: 18,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 8),
@@ -64,34 +64,13 @@ class AboutScreen extends StatelessWidget {
               'Tim Pengembang',
               style: TextStyle(
                 fontSize: 18,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 8),
             const Text(
               'Kamus Bahasa Moy dikembangkan oleh Papua Open Source, sebuah komunitas pengembang perangkat lunak yang berfokus pada pelestarian bahasa dan budaya Papua melalui teknologi.',
               style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 24),
-            Center(
-              child: Container(
-                width: 150,
-                height: 100,
-                decoration: BoxDecoration(
-                  color: const Color(0xFF1976D2),
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: Colors.grey.shade300, width: 1),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Papua Open Source',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
             ),
             const SizedBox(height: 24),
             const Center(

@@ -31,7 +31,7 @@ List<Word> dummyWords = [
   ),
   Word(
     word: 'ABLETSING',
-    phoneticSpelling: '[abletsing]',
+    phoneticSpelling: '[abletsiŋ]',
     meaning: 'terbalik',
     wordClass: 'a',
     exampleMoy: 'Kurusi abletsing iyo waet weng.',

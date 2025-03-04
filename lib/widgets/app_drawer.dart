@@ -16,7 +16,7 @@ class AppDrawer extends StatelessWidget {
         children: [
           // Drawer header
           Container(
-            color: const Color(0xFF1976D2),
+            color: const Color(0xFF2973B2),
             padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 16),
             width: double.infinity,
             child: Column(
@@ -24,11 +24,18 @@ class AppDrawer extends StatelessWidget {
               children: [
                 // Logo container
                 Container(
-                  width: 80,
-                  height: 60,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: 5.0), // Padding sama di semua sisi
+                    child: Image.asset(
+                      'assets/images/logo-kamus-bahasa-moy.png',
+                      width: 100,
+                      height: 100,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -53,8 +60,12 @@ class AppDrawer extends StatelessWidget {
           ),
           // Drawer menu items
           ListTile(
-            leading: const Icon(Icons.home_outlined),
+            leading: const Icon(
+              Icons.home_outlined,
+              color: Color(0xFF293241),
+            ),
             title: const Text('Beranda'),
+            textColor: const Color(0xFF293241),
             onTap: () {
               Navigator.pop(context);
               if (ModalRoute.of(context)?.settings.name != '/home') {
@@ -65,8 +76,12 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.menu_book_outlined),
+            leading: const Icon(
+              Icons.library_books_outlined,
+              color: Color(0xFF293241),
+            ),
             title: const Text('Kosakata'),
+            textColor: const Color(0xFF293241),
             onTap: () {
               Navigator.pop(context);
               if (ModalRoute.of(context)?.settings.name != '/vocabulary') {
@@ -80,8 +95,12 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.bookmark_border_outlined),
+            leading: const Icon(
+              Icons.bookmark_border_outlined,
+              color: Color(0xFF293241),
+            ),
             title: const Text('Favorit'),
+            textColor: const Color(0xFF293241),
             onTap: () {
               Navigator.pop(context);
               if (ModalRoute.of(context)?.settings.name != '/favorites') {
@@ -95,8 +114,12 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.info_outline),
+            leading: const Icon(
+              Icons.info_outline,
+              color: Color(0xFF293241),
+            ),
             title: const Text('Tentang'),
+            textColor: const Color(0xFF293241),
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).push(
@@ -105,8 +128,12 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.help_outline),
+            leading: const Icon(
+              Icons.help_outline,
+              color: Color(0xFF293241),
+            ),
             title: const Text('Bantuan & Kontak'),
+            textColor: const Color(0xFF293241),
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).push(
@@ -116,8 +143,12 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.logout_outlined),
+            leading: const Icon(
+              Icons.logout_outlined,
+              color: Color(0xFF293241),
+            ),
             title: const Text('Keluar'),
+            textColor: const Color(0xFF293241),
             onTap: () {
               // Langsung keluar dari aplikasi
               SystemNavigator.pop();

@@ -187,7 +187,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                             width: double.infinity,
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
-                              color: const Color(0xFF1976D2),
+                              color: const Color(0xFF2973B2),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(

@@ -26,7 +26,7 @@ class ContactScreen extends StatelessWidget {
             // Menghapus judul yang redundan dengan AppBar
             const Text(
               'Kami senang menerima pertanyaan, saran, dan masukan dari Anda untuk meningkatkan aplikasi Kamus Bahasa Moy.',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16, color: Color(0xFF293241)),
             ),
             const SizedBox(height: 32),
 
@@ -80,7 +80,7 @@ class ContactScreen extends StatelessWidget {
             ),
             child: Icon(
               icon,
-              color: const Color(0xFF1976D2),
+              color: const Color(0xFF2973B2),
               size: 24,
             ),
           ),
@@ -99,8 +99,9 @@ class ContactScreen extends StatelessWidget {
               Text(
                 value,
                 style: const TextStyle(
+                  color: Color(0xFF293241),
                   fontSize: 16,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ],

@@ -47,7 +47,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF1976D2),
+                  color: const Color(0xFF2973B2),
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.grey.shade300, width: 1),
                 ),
@@ -63,7 +63,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -111,8 +111,9 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
               const Text(
                 'Contoh Kalimat',
                 style: TextStyle(
+                  color: Color(0xFF293241),
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               const SizedBox(height: 16),
@@ -134,8 +135,9 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                         const Text(
                           'Bahasa Moy',
                           style: TextStyle(
+                            color: Color(0xFF293241),
                             fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                         const Spacer(),
@@ -150,8 +152,9 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                             child: Text(
                               '1',
                               style: TextStyle(
+                                backgroundColor: Color(0xFF2973B2),
                                 color: Colors.white,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.w500,
                               ),
                             ),
                           ),
@@ -163,7 +166,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                       widget.word.exampleMoy,
                       style: const TextStyle(
                         fontSize: 16,
-                        color: Colors.black87,
+                        color: Color(0xFF293241),
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -171,8 +174,9 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                     const Text(
                       'Bahasa Indonesia',
                       style: TextStyle(
+                        color: Color(0xFF293241),
                         fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -180,7 +184,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                       widget.word.exampleIndonesia,
                       style: const TextStyle(
                         fontSize: 16,
-                        color: Colors.black87,
+                        color: Color(0xFF293241),
                       ),
                     ),
                   ],

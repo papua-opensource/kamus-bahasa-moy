@@ -26,7 +26,10 @@ class UsageGuideScreen extends StatelessWidget {
             // Menghapus judul yang redundan dengan AppBar
             const Text(
               'Berikut adalah panduan untuk membantu Anda mempelajari dan menjelajahi kosakata bahasa Moy.',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(
+                fontSize: 16,
+                color: Color(0xFF293241),
+              ),
             ),
             const SizedBox(height: 32),
 
@@ -69,15 +72,16 @@ class UsageGuideScreen extends StatelessWidget {
             const Text(
               'Cara Membaca Kelas Kata',
               style: TextStyle(
+                color: Color(0xFF293241),
                 fontSize: 20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 16),
 
             const Text(
               'Setiap kata dalam kamus ini dilengkapi dengan informasi kelas kata yang ditunjukkan dengan singkatan berikut:',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(color: Color(0xFF293241), fontSize: 16),
             ),
             const SizedBox(height: 12),
 
@@ -100,8 +104,9 @@ class UsageGuideScreen extends StatelessWidget {
             const Text(
               'Tips Penggunaan',
               style: TextStyle(
+                color: Color(0xFF293241),
                 fontSize: 20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(height: 16),
@@ -142,14 +147,16 @@ class UsageGuideScreen extends StatelessWidget {
           Text(
             title,
             style: const TextStyle(
+              color: Color(0xFF293241),
               fontSize: 18,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(height: 8),
           Text(
             description,
             style: const TextStyle(
+              color: Color(0xFF293241),
               fontSize: 16,
               height: 1.5,
             ),
@@ -169,7 +176,7 @@ class UsageGuideScreen extends StatelessWidget {
                 child: Icon(
                   _getIconForTitle(title),
                   size: 64,
-                  color: const Color(0xFF1976D2),
+                  color: const Color(0xFF2973B2),
                 ),
               ),
             ),
@@ -189,15 +196,15 @@ class UsageGuideScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
             margin: const EdgeInsets.only(right: 12, top: 2),
             decoration: BoxDecoration(
-              color: const Color(0xFF1976D2).withOpacity(0.1),
+              color: const Color(0xFF2973B2).withOpacity(0.1),
               borderRadius: BorderRadius.circular(4),
               border: Border.all(color: Colors.grey.shade300, width: 1),
             ),
             child: Text(
               code,
               style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF1976D2),
+                fontWeight: FontWeight.w500,
+                color: Color(0xFF2973B2),
                 fontStyle: FontStyle.italic,
               ),
             ),
@@ -208,7 +215,7 @@ class UsageGuideScreen extends StatelessWidget {
               children: [
                 Text(name,
                     style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 16)),
+                        fontWeight: FontWeight.w500, fontSize: 16)),
                 Text(
                   explanation,
                   style: const TextStyle(fontSize: 14),
@@ -244,7 +251,7 @@ class UsageGuideScreen extends StatelessWidget {
         children: [
           const Icon(
             Icons.tips_and_updates_outlined,
-            color: Color(0xFF1976D2),
+            color: Color(0xFF2973B2),
             size: 24,
           ),
           const SizedBox(width: 12),
@@ -252,6 +259,7 @@ class UsageGuideScreen extends StatelessWidget {
             child: Text(
               tipText,
               style: const TextStyle(
+                color: Color(0xFF293241),
                 fontSize: 16,
                 height: 1.5,
               ),

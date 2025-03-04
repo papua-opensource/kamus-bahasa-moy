@@ -107,7 +107,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
               'Telusuri kosakata bahasa Moy berdasarkan abjad. Tekan kata untuk melihat detail.',
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.black87,
+                color: Color(0xFF293241),
               ),
             ),
           ),
@@ -119,7 +119,11 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
               children: [
                 // Tombol navigasi kiri
                 IconButton(
-                  icon: const Icon(Icons.arrow_back_ios, size: 18),
+                  icon: const Icon(
+                    Icons.arrow_back_ios,
+                    size: 18,
+                    color: Color(0xFF293241),
+                  ),
                   onPressed: _scrollLeft,
                 ),
                 // Daftar abjad dengan scroll
@@ -148,7 +152,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: isSelected
-                                ? const Color(0xFF1976D2)
+                                ? const Color(0xFF2973B2)
                                 : Colors.grey[200],
                           ),
                           child: Center(
@@ -156,9 +160,12 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                               _alphabets[index],
                               style: TextStyle(
                                 fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color:
-                                    isSelected ? Colors.white : Colors.black87,
+                                fontWeight: isSelected
+                                    ? FontWeight.w500
+                                    : FontWeight.w400,
+                                color: isSelected
+                                    ? Colors.white
+                                    : Colors.grey[500],
                               ),
                             ),
                           ),
@@ -169,7 +176,11 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                 ),
                 // Tombol navigasi kanan
                 IconButton(
-                  icon: const Icon(Icons.arrow_forward_ios, size: 18),
+                  icon: const Icon(
+                    Icons.arrow_forward_ios,
+                    size: 18,
+                    color: Color(0xFF293241),
+                  ),
                   onPressed: _scrollRight,
                 ),
               ],
@@ -224,7 +235,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                             width: double.infinity,
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
-                              color: const Color(0xFF1976D2),
+                              color: const Color(0xFF2973B2),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(

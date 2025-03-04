@@ -33,7 +33,10 @@ class HelpSupportScreen extends StatelessWidget {
           children: [
             const Text(
               'Silakan pilih salah satu opsi di bawah ini untuk mendapatkan informasi atau bantuan yang Anda perlukan.',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(
+                fontSize: 16,
+                color: Color(0xFF293241),
+              ),
             ),
             const SizedBox(height: 32),
 
@@ -120,7 +123,7 @@ class HelpSupportScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Row(
             children: [
-              Icon(icon, color: const Color(0xFF1976D2), size: 28),
+              Icon(icon, color: const Color(0xFF2973B2), size: 28),
               const SizedBox(width: 16),
               Expanded(
                 child: Column(
@@ -129,15 +132,18 @@ class HelpSupportScreen extends StatelessWidget {
                     Text(
                       title,
                       style: const TextStyle(
+                        color: Color(0xFF293241),
                         fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       description,
-                      style:
-                          const TextStyle(fontSize: 14, color: Colors.black87),
+                      style: const TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF293241),
+                      ),
                     ),
                   ],
                 ),

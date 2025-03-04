@@ -92,14 +92,16 @@ class PrivacyPolicyScreen extends StatelessWidget {
           Text(
             title,
             style: const TextStyle(
+              color: Color(0xFF293241),
               fontSize: 18,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(height: 8),
           Text(
             content,
             style: const TextStyle(
+              color: Color(0xFF293241),
               fontSize: 16,
               height: 1.5,
             ),

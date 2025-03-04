@@ -25,133 +25,130 @@ class HomeScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: const AppDrawer(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const SizedBox(height: 20),
-              // Logo container
-              Center(
-                child: Container(
-                  width: 100,
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF1976D2),
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Colors.grey.shade300, width: 1),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          bool isTablet = constraints.maxWidth > 600;
+          return SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 20),
+                  Image.asset(
+                    'assets/images/logo-kamus-bahasa-moy.png',
+                    width: isTablet ? 180 : 120,
+                    height: isTablet ? 180 : 120,
                   ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              // Judul aplikasi
-              const Text(
-                'Kamus Bahasa Moy',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 10),
-              // Teks deskripsi
-              const Text(
-                'Jelajahi kekayaan bahasa Moy dengan kamus digital interaktif ini.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 16,
-                ),
-              ),
-              const SizedBox(height: 40),
-              // Statistik section
-              const Text(
-                'Statistik',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 10),
-              // Statistik deskripsi
-              const Text(
-                'Kamus ini berisi 2.500+ kata bahasa Moy dengan contoh penggunaan dan arti.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 16,
-                ),
-              ),
-              const SizedBox(height: 40),
-              // Kata hari ini section
-              const Text(
-                'Kata hari ini',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 16),
-              // Kata hari ini card with border instead of shadow
-              InkWell(
-                onTap: () {
-                  // Navigasi ke halaman detail kata hari ini
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          VocabularyDetailScreen(word: dailyWord),
+                  const SizedBox(height: 16),
+                  const Text(
+                    'Kamus Bahasa Moy',
+                    style: TextStyle(
+                      color: Color(0xFF293241),
+                      fontSize: 22,
+                      fontWeight: FontWeight.w500,
                     ),
-                  );
-                },
-                child: Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF1976D2),
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.grey.shade300, width: 1),
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        'ABLETSING',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
+                  const SizedBox(height: 10),
+                  const Text(
+                    'Jelajahi kekayaan bahasa Moy dengan kamus digital interaktif ini.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFF293241),
+                      fontSize: 16,
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+                  const Text(
+                    'Statistik',
+                    style: TextStyle(
+                      color: Color(0xFF293241),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  const Text(
+                    'Kamus ini berisi 1000+ kata bahasa Moy dengan contoh penggunaan dan arti.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFF293241),
+                      fontSize: 16,
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: const Text(
+                      'Kata hari ini',
+                      style: TextStyle(
+                        color: Color(0xFF293241),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w400,
                       ),
-                      const SizedBox(height: 4),
-                      // Format inline untuk pelafalan, kelas kata dan arti
-                      RichText(
-                        text: TextSpan(
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                          ),
-                          children: [
-                            TextSpan(text: dailyWord.phoneticSpelling),
-                            const TextSpan(text: ' '),
-                            TextSpan(
-                              text: dailyWord.wordClass,
-                              style: const TextStyle(
-                                fontStyle: FontStyle.italic,
-                              ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              VocabularyDetailScreen(word: dailyWord),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF2973B2),
+                        borderRadius: BorderRadius.circular(8),
+                        border:
+                            Border.all(color: Colors.grey.shade300, width: 1),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'ABLETSING',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
                             ),
-                            const TextSpan(text: ' '),
-                            TextSpan(text: dailyWord.meaning),
-                          ],
-                        ),
+                          ),
+                          const SizedBox(height: 4),
+                          RichText(
+                            text: TextSpan(
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                              children: [
+                                TextSpan(text: dailyWord.phoneticSpelling),
+                                const TextSpan(text: ' '),
+                                TextSpan(
+                                  text: dailyWord.wordClass,
+                                  style: const TextStyle(
+                                    fontStyle: FontStyle.italic,
+                                  ),
+                                ),
+                                const TextSpan(text: ' '),
+                                TextSpan(text: dailyWord.meaning),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
-                ),
+                  const SizedBox(height: 20),
+                ],
               ),
-              const SizedBox(height: 20),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       ),
     );
   }
