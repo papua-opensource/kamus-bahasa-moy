@@ -4,9 +4,72 @@ import 'contact_screen.dart';
 import 'privacy_policy_screen.dart';
 import 'terms_of_service_screen.dart';
 import 'usage_guide_screen.dart';
+import 'package:flutter/services.dart';
 
 class HelpSupportScreen extends StatelessWidget {
   const HelpSupportScreen({Key? key}) : super(key: key);
+
+  // Fungsi untuk menampilkan dialog informasi URL
+  void _showFeedbackDialog(BuildContext context) {
+    final String feedbackUrl = 'https://forms.papuaopensource.org/feedback';
+
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Saran dan Umpan Balik'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('Buka URL berikut di browser Anda:'),
+            const SizedBox(height: 8),
+            InkWell(
+              onTap: () {
+                Clipboard.setData(ClipboardData(text: feedbackUrl));
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('URL disalin ke clipboard'),
+                    duration: Duration(seconds: 2),
+                  ),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        feedbackUrl,
+                        style: const TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                    const Icon(Icons.copy, size: 18),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(ctx).pop();
+            },
+            child: const Text('Tutup'),
+          ),
+        ],
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,6 +114,17 @@ class HelpSupportScreen extends StatelessWidget {
                   MaterialPageRoute(
                       builder: (context) => const ContactScreen()),
                 );
+              },
+            ),
+
+            // Card Saran atau Umpan Balik
+            _buildMenuCard(
+              context,
+              'Saran atau Umpan Balik',
+              'Bantu kami meningkatkan aplikasi dengan memberikan masukan.',
+              Icons.feedback_outlined,
+              () {
+                _showFeedbackDialog(context);
               },
             ),
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../widgets/app_drawer.dart';
 
 class AboutScreen extends StatelessWidget {
@@ -69,6 +70,120 @@ class AboutScreen extends StatelessWidget {
                 fontSize: 16,
                 color: Color(0xFF293241),
               ),
+            ),
+            const SizedBox(height: 24),
+            const Text(
+              'Sumber Data',
+              style: TextStyle(
+                color: Color(0xFF293241),
+                fontSize: 18,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(height: 8),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(
+                  color: Color(0xFF293241),
+                  fontSize: 16,
+                ),
+                children: [
+                  TextSpan(
+                    text:
+                        'Aplikasi ini menggunakan data kosakata dan definisi dari ',
+                  ),
+                  TextSpan(
+                    text: 'Kamus Dwibahasa Mooi',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  TextSpan(
+                    text: ' yang diterbitkan oleh ',
+                  ),
+                  TextSpan(
+                    text: 'Balai Bahasa Provinsi Papua',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  TextSpan(
+                    text:
+                        '. Kamus tersebut merupakan sumber otoritatif untuk bahasa Moy/Mooi dan telah disusun melalui penelitian bahasa yang ekstensif oleh ahli linguistik dari Balai Bahasa.',
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'Penggunaan data dari sumber resmi ini memastikan bahwa pengguna mendapatkan informasi bahasa yang akurat dan otentik, sejalan dengan upaya pelestarian bahasa daerah di Papua.',
+              style: TextStyle(
+                color: Color(0xFF293241),
+                fontSize: 16,
+              ),
+            ),
+            const SizedBox(height: 24),
+            const Text(
+              'Open Source',
+              style: TextStyle(
+                color: Color(0xFF293241),
+                fontSize: 18,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Aplikasi ini berbasis open source. Kode sumber dapat ditemukan pada repository GitHub:',
+                  style: TextStyle(
+                    color: Color(0xFF293241),
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                InkWell(
+                  onTap: () {
+                    final repoUrl =
+                        'https://github.com/papua-opensource/kamus-bahasa-moy';
+                    Clipboard.setData(ClipboardData(text: repoUrl));
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('URL GitHub disalin ke clipboard'),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'https://github.com/papua-opensource/kamus-bahasa-moy',
+                            style: const TextStyle(
+                              color: Colors.blue,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        const Icon(Icons.copy, size: 18),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  'Kontribusi dan masukan dari komunitas sangat dihargai untuk pengembangan dan perbaikan aplikasi ini lebih lanjut.',
+                  style: TextStyle(
+                    color: Color(0xFF293241),
+                    fontSize: 16,
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 24),
             const Text(

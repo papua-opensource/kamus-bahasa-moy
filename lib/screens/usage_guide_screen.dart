@@ -68,9 +68,9 @@ class UsageGuideScreen extends StatelessWidget {
               'assets/images/statistics_illustration.png',
             ),
 
-            // Menambahkan bagian baru tentang cara membaca kelas kata
+            // Bagian cara membaca kosakata
             const Text(
-              'Cara Membaca Kelas Kata',
+              'Cara Membaca Kosakata',
               style: TextStyle(
                 color: Color(0xFF293241),
                 fontSize: 20,
@@ -80,8 +80,113 @@ class UsageGuideScreen extends StatelessWidget {
             const SizedBox(height: 16),
 
             const Text(
-              'Setiap kata dalam kamus ini dilengkapi dengan informasi kelas kata yang ditunjukkan dengan singkatan berikut:',
+              'Setiap kata dalam kamus ini ditampilkan dengan format sebagai berikut:',
               style: TextStyle(color: Color(0xFF293241), fontSize: 16),
+            ),
+            const SizedBox(height: 16),
+
+            // Contoh format entri kamus
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: const Color(0xFFE9ECEF),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.grey.shade300, width: 1),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'abletsing',
+                          style: TextStyle(
+                            color: Color(0xFF293241),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        RichText(
+                          text: const TextSpan(
+                            style: TextStyle(
+                              color: Color(0xFF293241),
+                              fontSize: 16,
+                            ),
+                            children: [
+                              TextSpan(text: '[abletsiŋ] '),
+                              TextSpan(
+                                text: 'a',
+                                style: TextStyle(
+                                  fontStyle: FontStyle.italic,
+                                ),
+                              ),
+                              TextSpan(text: ' terbalik'),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Icon(
+                    Icons.bookmark_border,
+                    color: Color(0xFF6C757D),
+                  ),
+                ],
+              ),
+            ),
+
+            const SizedBox(height: 16),
+
+            // Penjelasan format kosakata
+            const Text(
+              'Penjelasan format:',
+              style: TextStyle(
+                color: Color(0xFF293241),
+                fontSize: 18,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+
+            const SizedBox(height: 12),
+
+            _buildFormatExplanation(
+              '1. Kata Bahasa Moy',
+              'Ditampilkan dengan huruf tebal dan ukuran lebih besar (contoh: "abletsing").',
+              Icons.title,
+            ),
+
+            _buildFormatExplanation(
+              '2. Pelafalan',
+              'Ditampilkan dalam tanda kurung siku (contoh: "[abletsiŋ]").',
+              Icons.record_voice_over,
+            ),
+
+            _buildFormatExplanation(
+              '3. Kelas Kata',
+              'Ditampilkan dengan huruf miring (contoh: "a" untuk adjektiva/kata kerja).',
+              Icons.category,
+            ),
+
+            _buildFormatExplanation(
+              '4. Arti dalam Bahasa Indonesia',
+              'Ditampilkan setelah kelas kata (contoh: "terbalik").',
+              Icons.translate,
+            ),
+
+            const SizedBox(height: 24),
+
+            // Keterangan kelas kata
+            const Text(
+              'Keterangan Kelas Kata:',
+              style: TextStyle(
+                color: Color(0xFF293241),
+                fontSize: 18,
+                fontWeight: FontWeight.w500,
+              ),
             ),
             const SizedBox(height: 12),
 
@@ -179,6 +284,55 @@ class UsageGuideScreen extends StatelessWidget {
                   color: const Color(0xFF164B8F),
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildFormatExplanation(
+      String title, String explanation, IconData icon) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            margin: const EdgeInsets.only(right: 12),
+            decoration: BoxDecoration(
+              color: const Color(0xFF164B8F).withOpacity(0.1),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Icon(
+              icon,
+              size: 24,
+              color: const Color(0xFF164B8F),
+            ),
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    color: Color(0xFF293241),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  explanation,
+                  style: const TextStyle(
+                    color: Color(0xFF293241),
+                    fontSize: 14,
+                    height: 1.4,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
