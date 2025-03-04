@@ -44,7 +44,7 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
 
 ## 🤝 Kontribusi
 
-Kontribusi untuk pengembangan Kamus Bahasa Moy sangat diapresiasi. Jika Anda ingin berkontribusi, Silahkan baca panduannya [disini](CONTRIBUTING.md)
+Kontribusi untuk pengembangan Kamus Bahasa Moy sangat diapresiasi. Jika Anda ingin berkontribusi, Silahkan baca panduannya [disini](CONTRIBUTING.md).
 
 ## 📄 Lisensi
 
