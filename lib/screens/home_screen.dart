@@ -88,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 10),
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(
