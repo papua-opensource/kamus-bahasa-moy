@@ -92,11 +92,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Spacer(),
-          const Text(
+          Text(
             'Kamus Bahasa Moy',
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 24,
+              fontSize: isTablet ? 32 : 24,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
@@ -128,8 +128,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ),
           const Spacer(),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: isTablet ? 40 : 20, vertical: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -170,8 +169,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     padding: EdgeInsets.symmetric(
-                      horizontal: isTablet ? 30 : 20,
-                      vertical: isTablet ? 15 : 10,
+                      horizontal: 20,
+                      vertical: 10,
                     ),
                   ),
                   child: Text(
