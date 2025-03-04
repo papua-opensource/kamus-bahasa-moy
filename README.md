@@ -1,7 +1,7 @@
 # Kamus Bahasa Moy
 
 <div align="center">
-  <img src="assets/images/logo_placeholder.png" alt="Logo Kamus Bahasa Moy" width="200"/>
+  <img src="assets/images/logo-kamus-bahasa-moy.png" alt="Logo Kamus Bahasa Moy" width="200"/>
   <h3>Aplikasi Kamus Digital untuk Pelestarian Bahasa Moy</h3>
 </div>
 
@@ -30,8 +30,8 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
 <div align="center">
   <table>
     <tr>
-      <td><img src="assets/screenshots/splash.png" alt="Splash Screen" width="200"/></td>
-      <td><img src="assets/screenshots/onboarding.png" alt="Onboarding" width="200"/></td>
+      <td><img src="assets/screenshots/splash-screen.png" alt="Splash Screen" width="200"/></td>
+      <td><img src="assets/screenshots/onboarding-screen.png" alt="Onboarding" width="200"/></td>
       <td><img src="assets/screenshots/home.png" alt="Home Screen" width="200"/></td>
     </tr>
     <tr>
@@ -65,5 +65,5 @@ Penggunaan data dari sumber resmi ini memastikan bahwa pengguna mendapatkan info
 ## 📬 Kontak
 
 Untuk pertanyaan atau masukan, silakan hubungi kami di:
-- Email: papuaopensource@example.com
+- Email: contact@papuaopensource.org
 - Website: www.papuaopensource.org
