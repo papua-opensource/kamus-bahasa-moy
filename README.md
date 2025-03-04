@@ -53,7 +53,7 @@ Proyek ini dilisensikan di bawah lisensi AGPL-3.0 - lihat file [LICENSE](LICENSE
 ## 🙏 Kredit
 
 - Dikembangkan oleh Papua Open Source
-- UI/UX Design dan aset visual lainnya dibuat oleh Tim Papua Open Source
+- UI/UX Design oleh Tim Papua Open Source, dengan beberapa aset visual lainnya yang berasal dari berbagai sumber
 - Logo dibuat menggunakan Grok AI
 - Data kosakata berasal dari Kamus Dwibahasa Mooi yang disusun oleh Balai Bahasa Provinsi Papua
 
