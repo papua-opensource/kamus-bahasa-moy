@@ -5,6 +5,15 @@
   <h3>Aplikasi Kamus Digital untuk Pelestarian Bahasa Moy</h3>
 </div>
 
+<div align="center">
+
+[![All Contributors](https://img.shields.io/github/contributors/papua-opensource/kamus-bahasa-moy)](https://github.com/papua-opensource/kamus-bahasa-moy/graphs/contributors)
+![GitHub last commit](https://img.shields.io/github/last-commit/papua-opensource/kamus-bahasa-moy.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/papua-opensource/kamus-bahasa-moy)
+[![License](https://img.shields.io/github/license/papua-opensource/kamus-bahasa-moy.svg)](LICENSE)
+
+</div>
+
 ## 📝 Deskripsi
 
 Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melestarikan dan mempromosikan bahasa Moy dari Papua. Aplikasi ini menyediakan kosakata bahasa Moy beserta terjemahan, pengucapan, dan contoh penggunaan dalam kalimat. Dengan antarmuka yang intuitif dan fitur-fitur yang berguna, aplikasi ini memudahkan pengguna untuk mempelajari dan mengapresiasi bahasa Moy.
