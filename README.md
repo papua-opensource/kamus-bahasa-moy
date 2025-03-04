@@ -32,12 +32,12 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
     <tr>
       <td><img src="assets/screenshots/splash-screen.png" alt="Splash Screen" width="200"/></td>
       <td><img src="assets/screenshots/onboarding-screen.png" alt="Onboarding" width="200"/></td>
-      <td><img src="assets/screenshots/home.png" alt="Home Screen" width="200"/></td>
+      <td><img src="assets/screenshots/home-screen.png" alt="Home Screen" width="200"/></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/vocabulary.png" alt="Vocabulary" width="200"/></td>
-      <td><img src="assets/screenshots/detail.png" alt="Detail Screen" width="200"/></td>
-      <td><img src="assets/screenshots/favorites.png" alt="Favorites" width="200"/></td>
+      <td><img src="assets/screenshots/vocabulary-screen.png" alt="Vocabulary" width="200"/></td>
+      <td><img src="assets/screenshots/vocabulary-detail-screen.png" alt="Detail Screen" width="200"/></td>
+      <td><img src="assets/screenshots/favorites-screen.png" alt="Favorites" width="200"/></td>
     </tr>
   </table>
 </div>
