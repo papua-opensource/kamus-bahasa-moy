@@ -30,7 +30,7 @@ class AboutScreen extends StatelessWidget {
             // Menghapus judul "Kamus Bahasa Moy" karena redundant dengan subtitle di bawah
             const SizedBox(height: 16),
             const Text(
-              'Kamus Bahasa Moy adalah proyek pelestarian bahasa yang dikembangkan untuk membantu melestarikan dan mempromosikan bahasa Moy dari Papua.',
+              'Kamus Bahasa Moy adalah proyek pelestarian bahasa yang dikembangkan untuk membantu melestarikan dan mempromosikan bahasa Moy dari Jayapura, Papua.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24),
