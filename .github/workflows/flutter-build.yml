@@ -24,13 +24,32 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
 
-      - name: Rename APK file to match app name and version
-        run: mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/kamus-bahasa-moy-${GITHUB_REF##*/}.apk
+      - name: Debug Output
+        run: |
+          echo "Listing output directory content:"
+          find build -name "*.apk" -type f
+        shell: bash
+
+      - name: Get Version
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Rename APK file
+        run: |
+          SOURCE_APK=$(find build -name "app-release.apk" -type f)
+          if [ -z "$SOURCE_APK" ]; then
+            echo "Error: app-release.apk not found"
+            exit 1
+          fi
+          DEST_FILE="kamus-bahasa-moy-${{ steps.get_version.outputs.VERSION }}.apk"
+          cp "$SOURCE_APK" "$DEST_FILE"
+          echo "APK_PATH=$DEST_FILE" >> $GITHUB_ENV
         shell: bash
 
       - name: Upload APK to GitHub Releases
         uses: softprops/action-gh-release@v1
         with:
-          files: build/app/outputs/flutter-apk/kamus-bahasa-moy-${GITHUB_REF##*/}.apk
+          files: ${{ env.APK_PATH }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
