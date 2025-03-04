@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               _isFavorite
                                   ? Icons.bookmark
                                   : Icons.bookmark_border,
-                              color: Color(0xFF495057),
+                              color: Color(0xFF6C757D),
                             ),
                             onPressed: () {
                               setState(() {

@@ -94,7 +94,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                     IconButton(
                       icon: Icon(
                         _isFavorite ? Icons.bookmark : Icons.bookmark_border,
-                        color: Color(0xFF495057),
+                        color: Color(0xFF6C757D),
                       ),
                       onPressed: () {
                         setState(() {

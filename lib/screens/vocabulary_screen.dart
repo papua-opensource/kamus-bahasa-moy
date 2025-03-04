@@ -41,7 +41,8 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
     'Z'
   ];
   final ScrollController _scrollController = ScrollController();
-  String _selectedAlphabet = ''; // Untuk menyimpan huruf yang dipilih
+  String _selectedAlphabet =
+      'A'; // Inisialisasi dengan huruf 'A' sebagai default
 
   @override
   void dispose() {
@@ -152,7 +153,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: isSelected
-                                ? const Color(0xFF495057)
+                                ? const Color(0xFFadb5bd)
                                 : Colors.grey[200],
                           ),
                           child: Center(
@@ -185,6 +186,13 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                 ),
               ],
             ),
+          ),
+          const SizedBox(height: 8),
+          // Divider antara abjad dan daftar kata
+          const Divider(
+            height: 1,
+            thickness: 1,
+            color: Color(0xFFDEE2E6),
           ),
           // Word list atau pesan jika tidak ada data
           Expanded(
@@ -285,7 +293,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                                     word.isFavorite
                                         ? Icons.bookmark
                                         : Icons.bookmark_border,
-                                    color: Color(0xFF293241),
+                                    color: Color(0xFF6C757D),
                                   ),
                                   onPressed: () {
                                     setState(() {
