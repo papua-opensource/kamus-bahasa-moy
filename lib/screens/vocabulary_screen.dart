@@ -152,7 +152,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: isSelected
-                                ? const Color(0xFF2973B2)
+                                ? const Color(0xFF164B8F)
                                 : Colors.grey[200],
                           ),
                           child: Center(
@@ -235,7 +235,7 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                             width: double.infinity,
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
-                              color: const Color(0xFF2973B2),
+                              color: const Color(0xFF164B8F),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(

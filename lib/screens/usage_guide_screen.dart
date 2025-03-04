@@ -176,7 +176,7 @@ class UsageGuideScreen extends StatelessWidget {
                 child: Icon(
                   _getIconForTitle(title),
                   size: 64,
-                  color: const Color(0xFF2973B2),
+                  color: const Color(0xFF164B8F),
                 ),
               ),
             ),
@@ -196,7 +196,7 @@ class UsageGuideScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
             margin: const EdgeInsets.only(right: 12, top: 2),
             decoration: BoxDecoration(
-              color: const Color(0xFF2973B2).withOpacity(0.1),
+              color: const Color(0xFF164B8F).withOpacity(0.1),
               borderRadius: BorderRadius.circular(4),
               border: Border.all(color: Colors.grey.shade300, width: 1),
             ),
@@ -204,7 +204,7 @@ class UsageGuideScreen extends StatelessWidget {
               code,
               style: const TextStyle(
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF2973B2),
+                color: Color(0xFF164B8F),
                 fontStyle: FontStyle.italic,
               ),
             ),
@@ -251,7 +251,7 @@ class UsageGuideScreen extends StatelessWidget {
         children: [
           const Icon(
             Icons.tips_and_updates_outlined,
-            color: Color(0xFF2973B2),
+            color: Color(0xFF164B8F),
             size: 24,
           ),
           const SizedBox(width: 12),

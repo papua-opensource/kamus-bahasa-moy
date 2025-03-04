@@ -123,7 +123,7 @@ class HelpSupportScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Row(
             children: [
-              Icon(icon, color: const Color(0xFF2973B2), size: 28),
+              Icon(icon, color: const Color(0xFF164B8F), size: 28),
               const SizedBox(width: 16),
               Expanded(
                 child: Column(

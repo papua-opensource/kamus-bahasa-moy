@@ -47,7 +47,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF2973B2),
+                  color: const Color(0xFF164B8F),
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.grey.shade300, width: 1),
                 ),
@@ -146,13 +146,13 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                           height: 24,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.blue[700],
+                            color: Color(0xFF164B8F),
                           ),
                           child: const Center(
                             child: Text(
                               '1',
                               style: TextStyle(
-                                backgroundColor: Color(0xFF2973B2),
+                                backgroundColor: Color(0xFF164B8F),
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),

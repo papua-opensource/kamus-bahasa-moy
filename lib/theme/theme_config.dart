@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ThemeConfig {
   // Warna primer aplikasi
-  static const Color primaryColor = Color(0xFF2973B2);
+  static const Color primaryColor = Color(0xFF164B8F);
 
   // AppBar theme dengan warna teks dan icon putih
   static final AppBarTheme appBarTheme = AppBarTheme(

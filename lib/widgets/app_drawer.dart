@@ -16,7 +16,7 @@ class AppDrawer extends StatelessWidget {
         children: [
           // Drawer header
           Container(
-            color: const Color(0xFF2973B2),
+            color: const Color(0xFF164B8F),
             padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 16),
             width: double.infinity,
             child: Column(

@@ -55,7 +55,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         'Kamus Bahasa Moy',
                         style: TextStyle(
                           color: const Color(
-                              0xFF2973B2), // Text color as per requirement (#2973B2)
+                              0xFF164B8F), // Text color as per requirement (#2973B2)
                           fontSize: isTablet ? 32 : 24,
                           fontWeight: FontWeight.bold,
                         ),
@@ -69,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: const Color(
-                                0xFF2973B2), // Text color as per requirement (#2973B2)
+                                0xFF164B8F), // Text color as per requirement (#2973B2)
                             fontSize: isTablet ? 20 : 16,
                           ),
                         ),
@@ -84,7 +84,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     '© 2025 Papua Open Source',
                     style: TextStyle(
                       color: const Color(
-                          0xFF2973B2), // Text color as per requirement (#2973B2)
+                          0xFF164B8F), // Text color as per requirement (#2973B2)
                       fontSize: isTablet ? 16 : 14,
                     ),
                   ),

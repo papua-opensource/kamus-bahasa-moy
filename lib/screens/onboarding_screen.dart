@@ -85,7 +85,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     double buttonFontSize = isTablet ? 18 : 16;
 
     return Container(
-      color: const Color(0xFF2973B2),
+      color: const Color(0xFF164B8F),
       padding: EdgeInsets.symmetric(horizontal: isTablet ? 40 : 20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -176,7 +176,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: Text(
                     item.buttonText,
                     style: TextStyle(
-                      color: const Color(0xFF2973B2),
+                      color: const Color(0xFF164B8F),
                       fontSize: buttonFontSize,
                       fontWeight: FontWeight.bold,
                     ),

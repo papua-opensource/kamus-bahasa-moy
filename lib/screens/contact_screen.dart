@@ -80,7 +80,7 @@ class ContactScreen extends StatelessWidget {
             ),
             child: Icon(
               icon,
-              color: const Color(0xFF2973B2),
+              color: const Color(0xFF164B8F),
               size: 24,
             ),
           ),
