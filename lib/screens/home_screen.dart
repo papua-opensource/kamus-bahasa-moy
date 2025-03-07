@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import '../widgets/app_drawer.dart';
-import '../models/word.dart';
-import 'vocabulary_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,14 +9,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  late bool _isFavorite;
-
-  @override
-  void initState() {
-    super.initState();
-    _isFavorite = dailyWord.isFavorite;
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,93 +79,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 16,
                     ),
                   ),
-                  const SizedBox(height: 40),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: const Text(
-                      'Kata hari ini',
-                      style: TextStyle(
-                        color: Color(0xFF293241),
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  InkWell(
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) =>
-                              VocabularyDetailScreen(word: dailyWord),
-                        ),
-                      );
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFE9ECEF),
-                        borderRadius: BorderRadius.circular(8),
-                        border:
-                            Border.all(color: Colors.grey.shade300, width: 1),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text(
-                                'ABLETSING',
-                                style: TextStyle(
-                                  color: Color(0xFF293241),
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              RichText(
-                                text: TextSpan(
-                                  style: const TextStyle(
-                                    color: Color(0xFF293241),
-                                    fontSize: 16,
-                                  ),
-                                  children: [
-                                    TextSpan(text: dailyWord.phoneticSpelling),
-                                    const TextSpan(text: ' '),
-                                    TextSpan(
-                                      text: dailyWord.wordClass,
-                                      style: const TextStyle(
-                                        fontStyle: FontStyle.italic,
-                                      ),
-                                    ),
-                                    const TextSpan(text: ' '),
-                                    TextSpan(text: dailyWord.meaning),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          IconButton(
-                            icon: Icon(
-                              _isFavorite
-                                  ? Icons.bookmark
-                                  : Icons.bookmark_border,
-                              color: Color(0xFF6C757D),
-                            ),
-                            onPressed: () {
-                              setState(() {
-                                _isFavorite = !_isFavorite;
-                                dailyWord.isFavorite = _isFavorite;
-                              });
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
                 ],
               ),
             ),

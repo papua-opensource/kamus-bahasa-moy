@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../screens/home_screen.dart';
 import '../screens/vocabulary_screen.dart';
-import '../screens/favorites_screen.dart';
 import '../screens/about_screen.dart';
 import '../screens/help_support_screen.dart';
 
@@ -89,25 +88,6 @@ class AppDrawer extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => const VocabularyScreen(),
                     settings: const RouteSettings(name: '/vocabulary'),
-                  ),
-                );
-              }
-            },
-          ),
-          ListTile(
-            leading: const Icon(
-              Icons.bookmark_border_outlined,
-              color: Color(0xFF293241),
-            ),
-            title: const Text('Favorit'),
-            textColor: const Color(0xFF293241),
-            onTap: () {
-              Navigator.pop(context);
-              if (ModalRoute.of(context)?.settings.name != '/favorites') {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => const FavoritesScreen(),
-                    settings: const RouteSettings(name: '/favorites'),
                   ),
                 );
               }
