@@ -102,7 +102,7 @@ class UsageGuideScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'abletsing',
+                          'ABLETSING',
                           style: TextStyle(
                             color: Color(0xFF293241),
                             fontSize: 20,
@@ -130,10 +130,6 @@ class UsageGuideScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ),
-                  const Icon(
-                    Icons.bookmark_border,
-                    color: Color(0xFF6C757D),
                   ),
                 ],
               ),
