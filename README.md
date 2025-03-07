@@ -24,8 +24,6 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
 
 - **Kamus Komprehensif**: Berisi lebih dari 2.500+ kata bahasa Moy dengan arti, pengucapan, dan kelas kata
 - **Penelusuran Abjad**: Cari kata berdasarkan abjad dengan navigasi yang mudah
-- **Kata Favorit**: Simpan kata-kata yang ingin dipelajari lebih lanjut
-- **Kata Hari Ini**: Mempelajari kata baru setiap hari
 - **Contoh Kalimat**: Setiap kata dilengkapi dengan contoh penggunaan dalam kalimat bahasa Moy dan terjemahan Bahasa Indonesia
 - **Klasifikasi Kelas Kata**: Identifikasi jenis kata (nomina, verba, adjektiva, dll)
 - **Tampilan Responsif**: Desain yang nyaman digunakan pada berbagai ukuran layar
@@ -44,9 +42,9 @@ Kamus Bahasa Moy adalah aplikasi mobile yang dikembangkan untuk membantu melesta
       <td><img src="assets/screenshots/home-screen.png" alt="Home Screen" width="200"/></td>
     </tr>
     <tr>
+      <td><img src="assets/screenshots/drawer-menu-screen.png" alt="Drawer Menu" width="200"/></td>
       <td><img src="assets/screenshots/vocabulary-screen.png" alt="Vocabulary" width="200"/></td>
       <td><img src="assets/screenshots/vocabulary-detail-screen.png" alt="Detail Screen" width="200"/></td>
-      <td><img src="assets/screenshots/favorites-screen.png" alt="Favorites" width="200"/></td>
     </tr>
   </table>
 </div>
