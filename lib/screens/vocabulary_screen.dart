@@ -337,7 +337,6 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
   String _errorMessage = '';
   int _currentPage = 1;
   final int _limit = 15;
-  int _totalCount = 0;
   bool _hasMoreData = true;
   bool _isLoadingMore = false;
 
@@ -414,7 +413,6 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
         _words.clear();
         _words.addAll(
             response.results.map(VocabularyService.mapApiWordToWord).toList());
-        _totalCount = response.count;
         _currentPage = 1;
         _hasMoreData = response.next != null;
         _isLoading = false;
