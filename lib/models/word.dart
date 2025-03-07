@@ -1,4 +1,5 @@
 class Word {
+  final int id;
   final String word;
   final String phoneticSpelling;
   final String meaning;
@@ -8,6 +9,7 @@ class Word {
   bool isFavorite;
 
   Word({
+    required this.id,
     required this.word,
     required this.phoneticSpelling,
     required this.meaning,
@@ -21,6 +23,7 @@ class Word {
 // Dummy data untuk pengujian dengan kelas kata yang jelas
 List<Word> dummyWords = [
   Word(
+    id: 1,
     word: 'ABA',
     phoneticSpelling: '[aba]',
     meaning: 'bete; talas',
@@ -30,6 +33,7 @@ List<Word> dummyWords = [
     isFavorite: false,
   ),
   Word(
+    id: 2,
     word: 'ABLETSING',
     phoneticSpelling: '[abletsiŋ]',
     meaning: 'terbalik',
@@ -39,6 +43,7 @@ List<Word> dummyWords = [
     isFavorite: true,
   ),
   Word(
+    id: 3,
     word: 'ABRAK',
     phoneticSpelling: '[abrak]',
     meaning: 'langit',
@@ -48,6 +53,7 @@ List<Word> dummyWords = [
     isFavorite: false,
   ),
   Word(
+    id: 4,
     word: 'ADAT',
     phoneticSpelling: '[adat]',
     meaning: 'kebiasaan; adat',
@@ -57,6 +63,7 @@ List<Word> dummyWords = [
     isFavorite: true,
   ),
   Word(
+    id: 5,
     word: 'BELAJAR',
     phoneticSpelling: '[belajar]',
     meaning: 'mempelajari',
@@ -66,6 +73,7 @@ List<Word> dummyWords = [
     isFavorite: false,
   ),
   Word(
+    id: 6,
     word: 'CEPAT',
     phoneticSpelling: '[cepat]',
     meaning: 'tidak lambat',
