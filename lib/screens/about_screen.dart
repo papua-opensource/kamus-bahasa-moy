@@ -67,8 +67,8 @@ class AboutScreen extends StatelessWidget {
             const Text(
               'Bahasa Moy adalah salah satu bahasa daerah dari Papua yang saat ini terancam punah. Kamus digital ini bertujuan untuk mendokumentasikan dan melestarikan kekayaan bahasa dan budaya Moy untuk generasi mendatang.',
               style: TextStyle(
-                fontSize: 16,
                 color: Color(0xFF293241),
+                fontSize: 16,
               ),
             ),
             const SizedBox(height: 24),
@@ -81,37 +81,15 @@ class AboutScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            RichText(
-              text: const TextSpan(
-                style: TextStyle(
-                  color: Color(0xFF293241),
-                  fontSize: 16,
-                ),
-                children: [
-                  TextSpan(
-                    text:
-                        'Aplikasi ini menggunakan data kosakata dan definisi dari ',
-                  ),
-                  TextSpan(
-                    text: 'Kamus Dwibahasa Mooi',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  TextSpan(
-                    text: ' yang diterbitkan oleh ',
-                  ),
-                  TextSpan(
-                    text: 'Balai Bahasa Provinsi Papua',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  TextSpan(
-                    text:
-                        '. Kamus tersebut merupakan sumber otoritatif untuk bahasa Moy/Mooi dan telah disusun melalui penelitian bahasa yang ekstensif oleh ahli linguistik dari Balai Bahasa.',
-                  ),
-                ],
+            Text(
+              'Aplikasi ini menggunakan data kosakata dan definisi dari Kamus Dwibahasa Mooi yang diterbitkan oleh Balai Bahasa Provinsi Papua. Kamus tersebut merupakan sumber otoritatif untuk bahasa Moy/Mooi dan telah disusun melalui penelitian bahasa yang ekstensif oleh ahli linguistik dari Balai Bahasa.',
+              style: TextStyle(
+                color: Color(0xFF293241),
+                fontSize: 16,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
+            Text(
               'Penggunaan data dari sumber resmi ini memastikan bahwa pengguna mendapatkan informasi bahasa yang akurat dan otentik, sejalan dengan upaya pelestarian bahasa daerah di Papua.',
               style: TextStyle(
                 color: Color(0xFF293241),
