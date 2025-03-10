@@ -11,7 +11,7 @@ class HelpSupportScreen extends StatelessWidget {
 
   // Fungsi untuk menampilkan dialog informasi URL
   void _showFeedbackDialog(BuildContext context) {
-    final String feedbackUrl = 'https://forms.papuaopensource.org/feedback';
+    final String feedbackUrl = 'https://forms.gle/zz5DnkvhNiHWSnpr8';
 
     showDialog(
       context: context,

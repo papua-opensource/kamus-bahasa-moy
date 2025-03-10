@@ -49,21 +49,7 @@ class UsageGuideScreen extends StatelessWidget {
 
             _buildGuideItem(
               context,
-              '3. Menandai Favorit',
-              'Tap ikon bookmark pada kartu kata untuk menandainya sebagai favorit. Anda dapat melihat semua kata favorit di halaman Favorit.',
-              'assets/images/favorite_illustration.png',
-            ),
-
-            _buildGuideItem(
-              context,
-              '4. Kata Hari Ini',
-              'Di halaman utama, Anda akan melihat "Kata Hari Ini" yang berubah setiap hari untuk membantu Anda mempelajari kata baru.',
-              'assets/images/daily_word_illustration.png',
-            ),
-
-            _buildGuideItem(
-              context,
-              '5. Melihat Statistik',
+              '3. Melihat Statistik',
               'Halaman utama juga menampilkan statistik tentang jumlah kata dalam kamus dan informasi lainnya tentang perkembangan kamus.',
               'assets/images/statistics_illustration.png',
             ),

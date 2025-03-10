@@ -66,7 +66,7 @@ class TermsOfServiceScreen extends StatelessWidget {
             ),
             _buildSection(
               '8. Kontak',
-              'Jika Anda memiliki pertanyaan tentang Syarat Layanan ini, silakan hubungi kami di papuaopensource@example.com.',
+              'Jika Anda memiliki pertanyaan tentang Syarat Layanan ini, silakan hubungi kami di contact@papuaopensource.org.',
             ),
             const SizedBox(height: 24),
             const Center(

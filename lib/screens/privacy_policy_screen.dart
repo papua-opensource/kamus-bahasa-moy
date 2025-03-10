@@ -65,7 +65,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
             ),
             _buildSection(
               'Kontak',
-              'Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi kami, silakan hubungi kami di papuaopensource@example.com.',
+              'Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi kami, silakan hubungi kami di contact@papuaopensource.org.',
             ),
             const SizedBox(height: 24),
             const Center(

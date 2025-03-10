@@ -33,14 +33,8 @@ class ContactScreen extends StatelessWidget {
             // Contact methods
             _buildContactMethod(
               'Email',
-              'papuaopensource@example.com',
+              'contact@papuaopensource.org',
               Icons.email_outlined,
-            ),
-
-            _buildContactMethod(
-              'Telepon',
-              '+62 812 3456 7890',
-              Icons.phone_outlined,
             ),
 
             _buildContactMethod(
