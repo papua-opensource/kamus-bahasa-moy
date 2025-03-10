@@ -35,8 +35,8 @@ class UsageGuideScreen extends StatelessWidget {
 
             _buildGuideItem(
               context,
-              '1. Mencari Kata',
-              'Anda dapat mencari kata bahasa Moy menggunakan fitur pencarian di halaman utama atau menelusuri kata berdasarkan abjad di halaman Kosakata.',
+              '1. Menelusuri Kosakata',
+              'Di halaman Kosakata, kosakata bahasa Moy disusun secara alfabetis. Anda dapat menelusuri daftar ini secara keseluruhan atau memfilter kata-kata berdasarkan huruf awal mereka untuk melihat kata-kata tertentu.',
               'assets/images/search_illustration.png',
             ),
 
@@ -107,6 +107,7 @@ class UsageGuideScreen extends StatelessWidget {
                             color: Color(0xFF293241),
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
                           ),
                         ),
                         const SizedBox(height: 8),
@@ -117,7 +118,12 @@ class UsageGuideScreen extends StatelessWidget {
                               fontSize: 16,
                             ),
                             children: [
-                              TextSpan(text: '[abletsiŋ] '),
+                              TextSpan(
+                                  text: '[abletsiŋ]',
+                                  style: TextStyle(
+                                    fontStyle: FontStyle.italic,
+                                  )),
+                              TextSpan(text: ' '),
                               TextSpan(
                                 text: 'a',
                                 style: TextStyle(
