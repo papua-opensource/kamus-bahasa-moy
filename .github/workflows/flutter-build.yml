@@ -38,7 +38,7 @@ jobs:
       - name: Rename APK File
         run: |
           mkdir -p build/renamed
-          cp build/app/outputs/flutter-apk/app-release.apk build/renamed/kamus-bahasa-moy-v${{ github.ref_name }}.apk
+          cp build/app/outputs/flutter-apk/app-release.apk build/renamed/kamus-bahasa-moy-${{ github.ref_name }}.apk
         
 
       - name: Upload APK to GitHub Releases
