@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../screens/home_screen.dart';
 import '../screens/vocabulary_screen.dart';
 import '../screens/about_screen.dart';
 import '../screens/help_support_screen.dart';
-import '../screens/splash_screen.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({Key? key}) : super(key: key);
@@ -135,71 +133,6 @@ class AppDrawer extends StatelessWidget {
               // Langsung keluar dari aplikasi
               SystemNavigator.pop();
             },
-          ),
-          // Development only: Reset Onboarding menu item
-          Container(
-            margin: const EdgeInsets.only(top: 8),
-            decoration: BoxDecoration(
-              color: Colors.amber.withOpacity(0.2),
-              border: Border(
-                top: BorderSide(color: Colors.amber.withOpacity(0.5), width: 1),
-                bottom:
-                    BorderSide(color: Colors.amber.withOpacity(0.5), width: 1),
-              ),
-            ),
-            child: ListTile(
-              leading: const Icon(
-                Icons.refresh,
-                color: Colors.red,
-              ),
-              title: const Text(
-                'Reset Onboarding (Dev)',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              subtitle: const Text(
-                'Hanya untuk pengembangan',
-                style: TextStyle(fontSize: 12),
-              ),
-              textColor: Colors.red,
-              onTap: () async {
-                // Confirm before resetting
-                final confirm = await showDialog<bool>(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    title: const Text('Reset Onboarding?'),
-                    content: const Text(
-                        'Ini akan menghapus status onboarding dan menampilkan kembali halaman onboarding. Lanjutkan?'),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, false),
-                        child: const Text('Batal'),
-                      ),
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, true),
-                        child: const Text('Reset'),
-                      ),
-                    ],
-                  ),
-                );
-
-                if (confirm == true) {
-                  // Reset status onboarding
-                  const storage = FlutterSecureStorage();
-                  await storage.deleteAll();
-
-                  // Close drawer and restart app at SplashScreen
-                  if (context.mounted) {
-                    Navigator.pop(context); // Close drawer
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                          builder: (context) => const SplashScreen()),
-                    );
-                  }
-                }
-              },
-            ),
           ),
           const Spacer(),
           // Copyright footer
