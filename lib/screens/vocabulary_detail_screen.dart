@@ -184,6 +184,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                       color: Color(0xFF293241),
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
+                      fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -195,7 +196,9 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                         fontSize: 16,
                       ),
                       children: [
-                        TextSpan(text: '[${_wordDetail.pronunciation}]'),
+                        TextSpan(
+                            text: '[${_wordDetail.pronunciation}]',
+                            style: TextStyle(fontStyle: FontStyle.italic)),
                         const TextSpan(text: ' '),
                         TextSpan(
                           text: _wordDetail.wordClassId.abbreviation,
@@ -289,6 +292,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                             style: const TextStyle(
                               fontSize: 16,
                               color: Color(0xFF293241),
+                              fontStyle: FontStyle.italic,
                             ),
                           ),
                         ] else
@@ -301,7 +305,7 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                             ),
                           ),
 
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 24),
 
                         // Bahasa Indonesia example
                         const Text(

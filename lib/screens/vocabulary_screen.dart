@@ -472,10 +472,10 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                                   Text(
                                     word.word,
                                     style: const TextStyle(
-                                      color: Color(0xFF293241),
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                        color: Color(0xFF293241),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FontStyle.italic),
                                   ),
                                   const SizedBox(height: 4),
                                   // Tampilkan phoneticSpelling, wordClass dan meaning dalam satu baris
@@ -486,7 +486,10 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                                         fontSize: 16,
                                       ),
                                       children: [
-                                        TextSpan(text: word.phoneticSpelling),
+                                        TextSpan(
+                                            text: word.phoneticSpelling,
+                                            style: TextStyle(
+                                                fontStyle: FontStyle.italic)),
                                         const TextSpan(text: ' '),
                                         TextSpan(
                                           text: word.wordClass,
