@@ -44,6 +44,6 @@ jobs:
       - name: Upload APK to GitHub Releases
         uses: softprops/action-gh-release@v1
         with:
-          files: build/renamed/kamus-bahasa-moy-v${{ github.ref_name }}.apk
+          files: build/renamed/kamus-bahasa-moy-${{ github.ref_name }}.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
