@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
+import '../utils/storage_util.dart'; // Import storage utility
 
 class OnboardingItem {
   final String title;
@@ -149,8 +150,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ],
                 ),
                 ElevatedButton(
-                  onPressed: () {
+                  onPressed: () async {
                     if (index == _onboardingItems.length - 1) {
+                      // Save that user has completed onboarding
+                      await StorageUtil.setOnboardingCompleted();
+
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                             builder: (context) => const HomeScreen()),

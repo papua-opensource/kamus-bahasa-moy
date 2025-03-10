@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'onboarding_screen.dart';
+import 'home_screen.dart';
+import '../utils/storage_util.dart'; // Import storage utility
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -15,11 +17,25 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     // Timer to navigate to next page after a few seconds
     Timer(const Duration(seconds: 3), () {
-      // Navigate to onboarding page
+      _checkFirstTime();
+    });
+  }
+
+  // Check if this is the first time the app is launched
+  Future<void> _checkFirstTime() async {
+    final hasCompletedOnboarding = await StorageUtil.hasCompletedOnboarding();
+
+    if (hasCompletedOnboarding) {
+      // User has already completed onboarding, go directly to home screen
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+      );
+    } else {
+      // First time user, show onboarding
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => const OnboardingScreen()),
       );
-    });
+    }
   }
 
   @override

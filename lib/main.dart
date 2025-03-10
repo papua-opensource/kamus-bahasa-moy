@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'screens/splash_screen.dart';
 import 'theme/theme_config.dart';
+import 'package:flutter/services.dart'; // Tambahkan ini
 
-void main() {
+void main() async {
+  // Tambahkan 2 baris ini
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
   runApp(const MyApp());
 }
 
