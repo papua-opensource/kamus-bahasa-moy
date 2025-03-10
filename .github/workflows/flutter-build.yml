@@ -35,9 +35,15 @@ jobs:
           find build -name "*.apk" -type f
         shell: bash
 
+      - name: Rename APK File
+        run: |
+          mkdir -p build/renamed
+          cp build/app/outputs/flutter-apk/app-release.apk build/renamed/kamus-bahasa-moy-v${{ github.ref_name }}.apk
+        
+
       - name: Upload APK to GitHub Releases
         uses: softprops/action-gh-release@v1
         with:
-          files: build/app/outputs/flutter-apk/app-release.apk
+          files: build/renamed/kamus-bahasa-moy-v${{ github.ref_name }}.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
