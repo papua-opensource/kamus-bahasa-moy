@@ -39,23 +39,6 @@ class AboutScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             const Text(
-              'Versi Aplikasi',
-              style: TextStyle(
-                color: Color(0xFF293241),
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-            const SizedBox(height: 8),
-            const Text(
-              'v1.0.0',
-              style: TextStyle(
-                color: Color(0xFF293241),
-                fontSize: 16,
-              ),
-            ),
-            const SizedBox(height: 24),
-            const Text(
               'Tentang Bahasa Moy',
               style: TextStyle(
                 color: Color(0xFF293241),
