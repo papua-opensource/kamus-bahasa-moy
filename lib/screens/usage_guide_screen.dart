@@ -23,7 +23,6 @@ class UsageGuideScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Menghapus judul yang redundan dengan AppBar
             const Text(
               'Berikut adalah panduan untuk membantu Anda mempelajari dan menjelajahi kosakata bahasa Moy.',
               style: TextStyle(

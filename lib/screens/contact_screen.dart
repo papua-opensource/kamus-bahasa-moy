@@ -23,7 +23,6 @@ class ContactScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Menghapus judul yang redundan dengan AppBar
             const Text(
               'Kami senang menerima pertanyaan, saran, dan masukan dari Anda untuk meningkatkan aplikasi Kamus Bahasa Moy.',
               style: TextStyle(fontSize: 16, color: Color(0xFF293241)),

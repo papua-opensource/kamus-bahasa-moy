@@ -23,7 +23,6 @@ class TermsOfServiceScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Menghapus judul yang redundan dengan AppBar
             const Text(
               'Terakhir diperbarui: 1 Maret 2025',
               style: TextStyle(
