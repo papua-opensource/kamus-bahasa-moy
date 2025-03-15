@@ -109,6 +109,7 @@ class _SongLyricScreenState extends State<SongLyricScreen> {
                                       Text(
                                         song['title'],
                                         style: const TextStyle(
+                                          color: Color(0xFF293241),
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),

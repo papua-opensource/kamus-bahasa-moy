@@ -228,6 +228,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
             Text(
               widget.song['title'],
               style: const TextStyle(
+                color: Color(0xFF293241),
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -282,6 +283,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
                     const Text(
                       'Audio Lagu:',
                       style: TextStyle(
+                        color: Color(0xFF293241),
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -433,6 +435,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
             const Text(
               'Lirik:',
               style: TextStyle(
+                color: Color(0xFF293241),
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
