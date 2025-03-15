@@ -4,6 +4,7 @@ import '../screens/home_screen.dart';
 import '../screens/vocabulary_screen.dart';
 import '../screens/about_screen.dart';
 import '../screens/help_support_screen.dart';
+import '../screens/song_lyric_screen.dart'; // Import untuk SongLyricScreen
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({Key? key}) : super(key: key);
@@ -80,6 +81,26 @@ class AppDrawer extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => const VocabularyScreen(),
                     settings: const RouteSettings(name: '/vocabulary'),
+                  ),
+                );
+              }
+            },
+          ),
+          // Menu Lirik Lagu yang baru ditambahkan
+          ListTile(
+            leading: const Icon(
+              Icons.lyrics_outlined,
+              color: Color(0xFF293241),
+            ),
+            title: const Text('Lirik Lagu'),
+            textColor: const Color(0xFF293241),
+            onTap: () {
+              Navigator.pop(context);
+              if (ModalRoute.of(context)?.settings.name != '/song_lyric') {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => const SongLyricScreen(),
+                    settings: const RouteSettings(name: '/song_lyric'),
                   ),
                 );
               }
