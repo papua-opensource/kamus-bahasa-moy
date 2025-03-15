@@ -136,8 +136,8 @@ class _SongLyricScreenState extends State<SongLyricScreen> {
                                           ),
                                           const SizedBox(width: 8),
                                           Text(
-                                            song['artist'] != null
-                                                ? 'Pengarang: ${song['artist']}'
+                                            song['author'] != null
+                                                ? 'Pengarang: ${song['author']}'
                                                 : 'Pengarang: Tidak diketahui',
                                             style: const TextStyle(
                                               fontSize: 12,

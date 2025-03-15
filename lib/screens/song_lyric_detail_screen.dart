@@ -143,8 +143,8 @@ class _SongDetailScreenState extends State<SongDetailScreen>
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  widget.song['artist'] != null
-                      ? 'Pengarang: ${widget.song['artist']}'
+                  widget.song['author'] != null
+                      ? 'Pengarang: ${widget.song['author']}'
                       : 'Pengarang: Tidak diketahui',
                   style: const TextStyle(
                     fontSize: 14,
