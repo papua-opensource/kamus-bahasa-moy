@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Yesus Ngut Beibi Song Daytong",
+        "category": "Lagu Rohani",
+        "author": null,
+        "lyrics": "Yesus ngut beibi song daytong\nMet nje syolinak seh\nNande syoli kambung dunak mranupdang\nNje solinak pegu mamsong pegu arai kakdamse\nNgo tangse mengwalitab kindik daitung\n\nOh Yesus ma Oh Yesus ma\nKmong krum kemsingsong\nkmong krung dmo bu arung tase\nPi kumtrung syolinak brone\nSyolinak syolinak dunya paine",
+        "audioUrl": null,
+        "hasAudio": false
+    },
+    {
+        "id": 2,
+        "title": "Oh Yerusalem Wary ksop",
+        "category": "Lagu Rohani",
+        "author": null,
+        "lyrics": "Oh yerusalem wali wali ksop\nKandei dambu ngonesye\n\nWarangkbadari Aiwary pungarang\nMet nengrei-nengrei katdangse",
+        "audioUrl": null,
+        "hasAudio": false
+    },
+    {
+        "id": 3,
+        "title": "Aiwary Kame Tamlak Daleye",
+        "category": "Lagu Rohani",
+        "author": null,
+        "lyrics": "Aiwary kame tamlak daleye\nJeh dunia ne\nDunia karang wabu mase\n\nOh.. a.. Yesus\nKameng nmbut pu yamtru\nNje wary yap ma sri\n\nKmong kama alei ngakbalei kameng\nNmbut tup de",
+        "audioUrl": "https://github.com/yokoberek/mp3/raw/refs/heads/main/Aiwary%20Kame%20Tamlak%20Daleye.mp3",
+        "hasAudio": true
+    }
+]
