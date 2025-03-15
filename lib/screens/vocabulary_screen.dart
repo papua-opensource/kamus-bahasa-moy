@@ -393,8 +393,8 @@ class _VocabularyScreenState extends State<VocabularyScreen> {
                       icon: const Icon(Icons.refresh),
                       label: Text(_isNoConnection ? 'Coba Lagi' : 'Muat Ulang'),
                       style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 24, vertical: 12),
+                        backgroundColor: const Color(0xFF164B8F),
+                        foregroundColor: Colors.white,
                       ),
                     ),
                   ],
