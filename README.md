@@ -3,6 +3,7 @@
 <div align="center">
   <img src="assets/images/logo-kamus-bahasa-moy.png" alt="Logo Kamus Bahasa Moy" width="200"/>
   <h3>Aplikasi Kamus Digital untuk Pelestarian Bahasa Moy</h3>
+  <p><em>🔍 Untuk versi aplikasi website, kunjungi <a href="https://github.com/papua-opensource/kamus-bahasa-moy-website">repository website</a></em></p>
 </div>
 
 <div align="center">
